@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Tekmagnus-/static/css/main.283d7286.css",
+    "main.css": "/Tekmagnus-/static/css/main.45f6c53c.css",
     "main.js": "/Tekmagnus-/static/js/main.a3db8f88.js",
     "static/js/787.ff19f737.chunk.js": "/Tekmagnus-/static/js/787.ff19f737.chunk.js",
     "index.html": "/Tekmagnus-/index.html",
-    "main.283d7286.css.map": "/Tekmagnus-/static/css/main.283d7286.css.map",
+    "main.45f6c53c.css.map": "/Tekmagnus-/static/css/main.45f6c53c.css.map",
     "main.a3db8f88.js.map": "/Tekmagnus-/static/js/main.a3db8f88.js.map",
     "787.ff19f737.chunk.js.map": "/Tekmagnus-/static/js/787.ff19f737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.283d7286.css",
+    "static/css/main.45f6c53c.css",
     "static/js/main.a3db8f88.js"
   ]
 }
