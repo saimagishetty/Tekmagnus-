@@ -1,7 +1,19 @@
+import React, { useState, useEffect } from 'react';
 import Logs from '../logs/Logs';
 import './Dashboard.css';
 
 function Dashboard() {
+  const [currentDateTime, setCurrentDateTime] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentDateTime(new Date());
+    }, 1000); // Update every second
+
+    return () => clearInterval(intervalId); // Cleanup on component unmount
+  }, []);
+  const formattedTime = currentDateTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
+  const formattedDate = currentDateTime.toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
   return (
     <div className='Dashboard'>
       <div className='item1' >
@@ -78,8 +90,8 @@ function Dashboard() {
           </div>
           <div className='item332'>
             <div className='box item322'>
-              <h1>04:04:39 PM</h1>
-              <p>Wed 06, Dec 2023</p>
+              <h1>{formattedTime}</h1>
+              <p>{formattedDate}</p>
             </div>
             <div className='item333'>
               <div>
