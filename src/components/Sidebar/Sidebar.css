@@ -1,6 +1,6 @@
 .Side {
     /* width: 20vw; */
-    height: 100vh;
+    height: calc(100vh);
     box-shadow: 1px 0 10px -4px #fff;
     background: #333;
     /* position: fixed;
