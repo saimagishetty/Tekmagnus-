@@ -1,0 +1,123 @@
+.Side {
+    /* width: 20vw; */
+    height: 100vh;
+    box-shadow: 1px 0 10px -4px #fff;
+    background: #333;
+    /* position: fixed;
+    left: 0px;
+    top: 0px; */
+}
+
+.child1 {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+}
+
+.child1 h2 {
+    font-size: 57px;
+    font-weight: 600;
+}
+
+.child1 p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.child2 {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    padding: 50px 15px 20px 0;
+}
+
+.item {
+    height: 45px;
+    background: #fff;
+    color: #000;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.item p {
+    width: 100px;
+}
+.item span {
+    padding: 0 10px;
+}
+
+.second {
+    margin-top: 20px;
+    background: orange;
+    color: #fff;
+    font-weight: 700;
+}
+
+.items {
+    margin-top: -10px;
+    padding-left: 20px;
+}
+
+li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+li:hover {
+    color: orange;
+}
+
+.arrow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.right {
+    left: 50%;
+    top: 20%;
+}
+.left {
+    left: 50%;
+    top: 44%;
+}
+@media only screen and (max-width: 999px) {
+    h2{
+        font-size: 20px !important;
+    }
+    .child1 p{
+        font-size: 8px !important;
+    }
+    .item p {
+        width: 60px !important;
+        font-size: 12px !important;
+    }
+    li{
+        font-size: 12px !important;
+    }
+    .logs1-child1{
+        padding: 5px !important;
+    }
+    .material-symbols-outlined{
+        font-size: 14px !important;
+    }
+
+}
+@media only screen and (max-width: 599px) {
+    .child2{
+        padding: 50px 8px 20px 0;
+    }
+}

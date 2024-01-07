@@ -1,0 +1,142 @@
+.logs {
+    padding: 30px 0;
+}
+
+.logs1 {
+    display: flex;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.logs1-child {
+    background: orange;
+    border: 0.5px solid #fff;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.logs1-child1 {
+    background: black;
+    border: 0.5px solid #fff;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+}
+
+.logs2 {
+    border-radius: 5px;
+    border: 0.5px solid #fff;
+}
+
+.logs21 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logs21 .logs1-child1 {
+    border-radius: 0 0 0 0;
+}
+
+.logs21 .last {
+    border-radius: 0 10px 10px 0;
+}
+
+table {
+    width: 100%;
+}
+
+td,
+th {
+    border-top: 0.5px solid #fff !important;
+    /* border-bottom: 0.5px solid #fff !important; */
+    text-align: center;
+}
+.center{
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    padding-top: 5px;
+}
+.btn1{
+    width: 50px;
+    height: 15px;
+    font-size: 10px;
+} 
+.woff{
+    background: orange;
+}
+.leave{
+    background: pink;
+}
+.attendanceBar{
+    display: flex;
+    justify-content: space-around;
+    background: green;
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+    width: 100px;
+}
+.attendanceBar div{
+    height: 20px;
+    width: 10px;
+    background: #fff;
+}
+@media only screen and (max-width: 1199px) {
+    h2 {
+        font-size: 22px;
+    }
+    td,th {
+        font-size: 12px !important;
+    }
+    .text4 {
+        font-size: 14px !important;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .attendanceBar{
+        height: 15px;
+        width: 70px;
+    }
+    .attendanceBar div{
+        height: 15px;
+        width: 10px;
+    }
+}
+@media only screen and (max-width: 599px) {
+    .logs h2 {
+        font-size: 12px !important;
+    }
+    .logs1-child1{
+        padding: 5px !important;
+        font-size: 10px !important;
+    }
+    .logs1-child{
+        padding: 5px !important;
+        font-size: 10px !important;
+    }
+    td,th {
+        font-size: 10px !important;
+    }
+    .attendanceBar{
+        height: 10px;
+        width: 40px;
+    }
+    .attendanceBar div{
+        height: 10px;
+        width: 5px;
+    }
+    .btn1 {
+        width: 35px;
+        height: 12px;
+        font-size: 8px;
+    }
+    .logs21{
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 10px;
+    }
+    .logs21 .logs1{
+        margin: 3px 0;
+    }
+}
